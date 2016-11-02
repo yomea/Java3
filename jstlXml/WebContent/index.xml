@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book>
+		<name>java</name>
+		<author>hong</author>
+	</book>
+	
+	<book>
+		<name>redis</name>
+		<author>youth</author>
+	</book>
+
+</books>

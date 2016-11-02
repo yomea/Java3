@@ -1,0 +1,26 @@
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 动态调用method -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+	<!-- 打开开发模式 -->
+	<constant name="struts.devMode" value="true"/>
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<!-- 设置以什么结尾 -->
+	<constant name="struts.action.extension" value="do,action,,"/>
+
+
+    <package name="default" extends="struts-default" namespace="/">
+        <action name="test_*" class="com.actions.ajax.DojoAction" method="{1}">
+        	<result name="world" type="dispatcher">
+        		/WEB-INF/jsp/hello.jsp
+        	</result>
+        	
+        	<result name="input" type="dispatcher">
+        		/WEB-INF/jsp/test.jsp
+        	</result>
+        </action>
+    </package>
+
+</struts>

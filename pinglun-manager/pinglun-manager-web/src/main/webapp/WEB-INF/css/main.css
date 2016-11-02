@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+	*{ padding:0; margin:0;}
+	#main{ width:600px; margin:0 auto; border-radius:5px;}
+	.box{ margin-bottom:30px; border:1px solid #666;}
+	.content{ background-color:rgb(46,46,46); padding:10px; overflow:hidden; color:white}
+	.pinglun{ background-color:#262626;}
+	.pic,.info{ float:left;}
+	.info{ padding-left:20px;}
+	.info dl{ padding-bottom:20px;}
+	.watchCount{ display:inline-block; width:10px; height:10px; background:url(../images/user02.png) no-repeat left; background-size:5px 5px;}
+	.pinglun{ padding:10px; color:white;}
+	.split{ border-bottom:#666 2px solid; clear:both; margin-top:20px; padding-bottom:20px;}
+	.detail{ padding-top:20px}
+	.detail p{ text-indent:30px; line-height:30px;}
+	.tool{ overflow:hidden;}
+	.tool li{ list-style-type:none; margin-left:30px; float:left;}
+	.tool i{ background-size:20px 20px; display:inline-block; width:40px; height:20px; vertical-align: bottom;}
+	.ico-pinglun{ background:url(../images/user01.png) center no-repeat;}
+	.ico-zhuanfa{ background:url(../images/pn14.gif) center no-repeat;}
+	.ico-zan{background: url(../images/gb07.png) center no-repeat;}
+	.ico-shoucan{ background:url(../images/save02.png) center no-repeat;}
+	.ico-more{ background: url(../images/more-red02.png) center no-repeat;}
+	.zanpic{ padding-top:10px;}
+	.zanlist{  display:inline-block; width:40px; height:40px; background:url(../images/gb09.png) center no-repeat; background-color:#2e2e2e;}
+	.zanpic div{ display:inline-block; padding-top:10px; padding-right:0px}
+	.userpinglun{ overflow:hidden; padding:10px; font-size:10px;}
+	.userpinglunpic{ float:left;}
+	.userpingluninfo{ padding-left:50px; line-height:20px }
+	.username{ display:block; padding-bottom:10px;}
+	.pingluncontent{ color: #666;}
+	.child{ padding-left:50px;}
