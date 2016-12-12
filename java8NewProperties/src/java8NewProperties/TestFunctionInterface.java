@@ -3,17 +3,18 @@ package java8NewProperties;
 public class TestFunctionInterface {
 
 	public static void main(String[] args) {
-		System.out.println("--------------------¾²Ì¬·½·¨ÒıÈë-------------------------");
-		Java8FunctionInterface<Integer> jfi = Integer :: max;//Ïàµ±ÓÚ·µ»ØÁËÒ»¸öÄäÃûµÄÊµÏÖÀà
+		System.out.println("--------------------é™æ€æ–¹æ³•å¼•å…¥-------------------------");
+		Java8FunctionInterface<Integer> jfi = Integer :: max;//ç›¸å½“äºè¿”å›äº†ä¸€ä¸ªåŒ¿åçš„å®ç°ç±»
+		//ç›¸å½“äºnew Java8FunctionInterface() {å®ç°çš„æ–¹æ³•ï¼Œé‡Œé¢è°ƒç”¨Integer.max()}		
 		System.out.println(jfi.bijiao(9, 10));
-		System.out.println("--------------------¶ÔÏó·½·¨ÒıÈë-------------------------");
+		System.out.println("--------------------å¯¹è±¡æ–¹æ³•å¼•å…¥-------------------------");
 		Integer a = new Integer(11);
 		Java8FunctionInterface2<Integer> jfi2 = a :: intValue;
 		System.out.println(jfi2.value());
-		System.out.println("--------------------ÌØÊâÀàĞÍ·½·¨ÒıÈë-------------------------");
+		System.out.println("--------------------ç‰¹æ®Šç±»å‹æ–¹æ³•å¼•å…¥-------------------------");
 		Java8FunctionInterface3<String> jfi3 = String :: compareTo;
 		System.out.println(jfi3.compare("A", "B"));
-		System.out.println("--------------------¹¹Ôì·½·¨ÒıÈë-------------------------");
+		System.out.println("--------------------æ„é€ æ–¹æ³•å¼•å…¥-------------------------");
 		Java8FunctionInterface4<Book> jfi4 = Book :: new;
 		Book book = jfi4.create("youth", 1000);
 		System.out.println(book);
